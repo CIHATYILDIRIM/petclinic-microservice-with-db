@@ -7,4 +7,8 @@ RUN tar -xzf dockerize.tar.gz
 RUN chmod +x dockerize
 ADD ./target/*.jar /app.jar
 EXPOSE ${EXPOSED_PORT}
+<<<<<<< HEAD
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+=======
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"] 
+>>>>>>> feature/msp-7
